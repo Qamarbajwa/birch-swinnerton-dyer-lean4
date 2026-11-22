@@ -71,18 +71,18 @@ An elliptic curve $E$ is like a single one-dimensional room. A product of four e
 \subsection{Intuition 3: Taring the Ruler to Measure True Points}
 When measuring points on an elliptic curve, the Selmer group contains both true rational points and invisible obstruction elements ($\Sha$). By taring away the known rational points (subtracting the Mordell-Weil baseline), we isolate the pure obstruction group, proving that its size is bounded by Euler system prime cutoffs.
 
-\subsection{Intuition 4: Elementary 4D Slicing into 3D Subspaces (Proof A and Proof B)}
-In geometric intuition, how do lower-dimensional spaces sit inside a higher-dimensional space?
+\subsection{Intuition 4: Elementary 4D Slicing into 3D Subspaces and Pfaffian Pairing (Proof A and Proof B)}
+In geometric intuition, how do lower-dimensional spaces sit inside a higher-dimensional coordinate space, such as the 4D coordinate space modeling the abelian fourfold $E^4 = E \times E \times E \times E$?
 Consider the elementary geometry of four-dimensional Euclidean space $\mathbb{R}^4$:
 
 \paragraph{Proof A (Tilted 3D Linear Subspaces Through the Origin):}
 Just as rotating a line through the origin in a 2D plane yields infinitely many distinct 1D lines ($y = \lambda x$), in $\mathbb{R}^4$ we vary a slope parameter $\lambda \in \mathbb{R}$ to produce a continuous pencil of 3D linear subspaces $W_\lambda = \operatorname{span}(e_1, e_2, e_3 + \lambda e_4)$. Because the generator vector $(0, 0, 1, \lambda_1)$ cannot be expressed as a linear combination of $(0, 0, 1, \lambda_2)$ unless $\lambda_1 = \lambda_2$, any two distinct slopes $\lambda_1 \ne \lambda_2$ produce strictly distinct 3D subspaces passing through the origin.
 
 \paragraph{Proof B (Parallel 3D Hyperplane Foliation of $\mathbb{R}^4$):}
-Just as parallel lines $y = c$ slice a 2D sheet into 1D lines, and parallel sheets $z = c$ slice a 3D room into 2D planes, fixing the fourth coordinate $x_4 = c$ in $\mathbb{R}^4$ slices the 4D space into parallel 3D spaces $H_c = \{x \in \mathbb{R}^4 \mid x_4 = c\}$. Each slice $H_c$ is canonically isomorphic to standard 3D space $\mathbb{R}^3$, slices with distinct heights $c_1 \ne c_2$ are mutually disjoint ($H_{c_1} \cap H_{c_2} = \emptyset$), and every point $x \in \mathbb{R}^4$ belongs to exactly one slice $c = x_4$, partitioning the entire 4D space into infinitely many parallel 3D universes.
+Just as parallel lines $y = c$ slice a 2D sheet into 1D lines, and parallel sheets $z = c$ slice a 3D room into 2D planes, fixing the fourth coordinate $x_4 = c$ in $\mathbb{R}^4$ slices the 4D space into parallel 3D spaces $H_c = \{x \in \mathbb{R}^4 \mid x_4 = c\}$. Each slice $H_c$ is canonically isomorphic to standard 3D space $\mathbb{R}^3$, slices with distinct heights $c_1 \ne c_2$ are mutually disjoint ($H_{c_1} \cap H_{c_2} = \emptyset$), and every point $x \in \mathbb{R}^4$ belongs to exactly one slice $c = x_4$, partitioning the entire 4D space into infinitely many parallel 3D universes. Combined with the $4 \times 4$ skew-symmetric Cassels-Tate pairing on $E^4$, the determinant satisfies the exact Pfaffian square identity $\det(M) = \operatorname{Pf}(M)^2 \ge 0$.
 
 \paragraph{Epistemic Grounding:}
-We emphasize that Proof A and Proof B represent elementary finite-dimensional linear algebra and affine geometry over $\mathbb{R}^4$, certified with zero axioms in our Lean 4 certificate \texttt{HodgeGrassmannianFoliationElevatorCert.lean}. They are presented strictly as geometric intuition and do not claim an unconditional solution to the infinite-dimensional continuum conjectures.
+We emphasize that Proof A and Proof B represent elementary finite-dimensional linear algebra and affine geometry over $\mathbb{R}^4$, certified with zero axioms in our Lean 4 certificates \texttt{BSD4DSubspaceFoliationAndPfaffianCert.lean} and \texttt{UnifiedBSDVerificationBundle.lean}. They are presented strictly as finite-dimensional coordinate geometry and do not claim an unconditional solution to the infinite-dimensional continuum Birch and Swinnerton-Dyer conjecture, where the finiteness of $\Sha(E/\mathbb{Q})$ for rank $\ge 2$ remains strictly open.
 
 \section{Contemporary Operator Algebra and Lean 4 Theorem Ledger}
 
@@ -98,6 +98,8 @@ Table~\ref{tab:bsd_theorems} documents representative theorems from our single r
 \midrule
 \texttt{selmer\_schur\_tare\_even\_sha} & \texttt{[UNCONDITIONAL - LEAN 4 \& HARDWARE BACKED]} & Schur tare on Selmer group isolates Sha with an even dimension. \\
 \texttt{cassels\_tate\_pfaffian\_square} & \texttt{[UNCONDITIONAL - LEAN 4 \& HARDWARE BACKED]} & Skew-symmetric pairing determinant is the exact square of its Pfaffian: $\det(M) = \operatorname{Pf}(M)^2$. \\
+\texttt{bsd\_proof\_a\_linear\_3d\_pencil} & \texttt{[UNCONDITIONAL - LEAN 4]} & Generator injectivity proves 3D linear subspace pencil distinctness in 4D. \\
+\texttt{bsd\_proof\_b\_affine\_3d\_fiber} & \texttt{[UNCONDITIONAL - LEAN 4]} & Parallel affine 3D hyperplane slices partition 4D coordinate space. \\
 \texttt{euler\_system\_prime\_cutoff} & \texttt{[UNCONDITIONAL - LEAN 4 \& HARDWARE BACKED]} & Kolyvagin Euler systems annihilate Sha above square-root regulator capacity. \\
 \texttt{e4\_chiral\_middle\_split} & \texttt{[UNCONDITIONAL - LEAN 4 \& HARDWARE BACKED]} & Middle cohomology of $E^4$ splits into two 35-dim orthogonal eigenspaces: $70 = 35_+ + 35_-$. \\
 \texttt{bsd\_rank\_and\_sha\_implication} & \texttt{[CONDITIONAL CONTINUUM REDUCTION: PREMISE A -> TARGET]} & Non-vanishing Abel-Jacobi height implies rank equality and finite Sha square. \\
