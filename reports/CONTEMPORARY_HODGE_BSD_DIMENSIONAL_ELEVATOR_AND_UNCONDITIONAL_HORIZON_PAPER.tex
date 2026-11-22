@@ -71,6 +71,19 @@ An elliptic curve $E$ is like a single one-dimensional room. A product of four e
 \subsection{Intuition 3: Taring the Ruler to Measure True Points}
 When measuring points on an elliptic curve, the Selmer group contains both true rational points and invisible obstruction elements ($\Sha$). By taring away the known rational points (subtracting the Mordell-Weil baseline), we isolate the pure obstruction group, proving that its size is bounded by Euler system prime cutoffs.
 
+\subsection{Intuition 4: Elementary 4D Slicing into 3D Subspaces (Proof A and Proof B)}
+In geometric intuition, how do lower-dimensional spaces sit inside a higher-dimensional space?
+Consider the elementary geometry of four-dimensional Euclidean space $\mathbb{R}^4$:
+
+\paragraph{Proof A (Tilted 3D Linear Subspaces Through the Origin):}
+Just as rotating a line through the origin in a 2D plane yields infinitely many distinct 1D lines ($y = \lambda x$), in $\mathbb{R}^4$ we vary a slope parameter $\lambda \in \mathbb{R}$ to produce a continuous pencil of 3D linear subspaces $W_\lambda = \operatorname{span}(e_1, e_2, e_3 + \lambda e_4)$. Because the generator vector $(0, 0, 1, \lambda_1)$ cannot be expressed as a linear combination of $(0, 0, 1, \lambda_2)$ unless $\lambda_1 = \lambda_2$, any two distinct slopes $\lambda_1 \ne \lambda_2$ produce strictly distinct 3D subspaces passing through the origin.
+
+\paragraph{Proof B (Parallel 3D Hyperplane Foliation of $\mathbb{R}^4$):}
+Just as parallel lines $y = c$ slice a 2D sheet into 1D lines, and parallel sheets $z = c$ slice a 3D room into 2D planes, fixing the fourth coordinate $x_4 = c$ in $\mathbb{R}^4$ slices the 4D space into parallel 3D spaces $H_c = \{x \in \mathbb{R}^4 \mid x_4 = c\}$. Each slice $H_c$ is canonically isomorphic to standard 3D space $\mathbb{R}^3$, slices with distinct heights $c_1 \ne c_2$ are mutually disjoint ($H_{c_1} \cap H_{c_2} = \emptyset$), and every point $x \in \mathbb{R}^4$ belongs to exactly one slice $c = x_4$, partitioning the entire 4D space into infinitely many parallel 3D universes.
+
+\paragraph{Epistemic Grounding:}
+We emphasize that Proof A and Proof B represent elementary finite-dimensional linear algebra and affine geometry over $\mathbb{R}^4$, certified with zero axioms in our Lean 4 certificate \texttt{HodgeGrassmannianFoliationElevatorCert.lean}. They are presented strictly as geometric intuition and do not claim an unconditional solution to the infinite-dimensional continuum conjectures.
+
 \section{Contemporary Operator Algebra and Lean 4 Theorem Ledger}
 
 \subsection{Formal Categorization of BSD Theorems}
