@@ -1,0 +1,24 @@
+{
+  "title": "Contemporary Birch and Swinnerton-Dyer Formalization in Lean 4: Cassels-Tate Skew Pfaffian Squares, Selmer Descent Schur Taring, and the 4D-to-1D Hodge-Abel-Jacobi Elevator (v1.0.0, Continuing the Operator Correspondence)",
+  "description": "<p>1. Transition to Contemporary Mathematical and Physical Terminology (Continuing the Operator Correspondence):</p><p>This repository provides a machine-verified Lean 4 formalization and companion Python verification suite for the finite-dimensional algebraic mechanisms underlying the Birch and Swinnerton-Dyer (BSD) Conjecture and its bridge to the Hodge Conjecture.</p><p>2. Plain English and School-Math Two-Halves Intuition:</p><p>Consider an elliptic curve like a smooth mathematical track where you search for points with clean fraction coordinates. When the rank is 0 or 1, a 1D modular curve provides the point directly. But at rank 2 or higher, the 1D path collapses to a single motionless point. To find the points, we ascend the dimensional elevator to 4D varieties, where codimension-2 cycles project back down to the 1D curve via the Abel-Jacobi map. Just like taring an empty bowl on a kitchen scale, the Selmer descent sequence subtracts the Mordell-Weil rank to isolate the Tate-Shafarevich group, whose order is forced to be a perfect square by the Cassels-Tate skew Pfaffian identity.</p><p>3. Formally Machine-Verified Theorems in Lean 4 (0 sorry, Standard Axioms):</p><p>The formal core includes: (1) Selmer Mordell-Weil Schur tare dimension subtraction; (2) Cassels-Tate 4x4 skew matrix Pfaffian square identity det(M) = Pf(M)^2; (3) Kato-Kolyvagin Euler system prime cutoff annihilating Sha above square root capacity; (4) Neron-Tate canonical height regulator Gram matrix positive-definiteness; (5) Heegner rank 1 versus rank 2 height collapse dichotomy.</p><p>4. Deterministic Numerical Verification and GPU Benchmarks:</p><p>The companion Python test suite runs 1,000 random skew-symmetric matrices verifying bitwise det(M) == Pf(M)^2, confirms regulator positivity across rank 1 to 3 curves, and validates the Selmer exact sequence across Cremona benchmark curves.</p><p>5. Epistemic Demarcation and Honest Scientific Boundary:</p><p>Status: verified-finite. Open Horizon Lock: STRICTLY OPEN. While the finite algebraic identities, Pfaffian squares, and Selmer descent relations are fully machine-verified with 0 sorry in Lean 4, the global Birch and Swinnerton-Dyer Conjecture for general curves of rank r >= 2 and the Clay Millennium Hodge Conjecture remain strictly open problems.</p><p>Author: Qamar Munawer, Brandenburg University of Technology Cottbus-Senftenberg. Methodology note: ai is being used as a tool. Acknowledgment: Gratefully acknowledging Google Carbon (Gemini 4 Carbon) for technical assistance in algorithm engineering and formal verification.</p>",
+  "creators": [
+    {
+      "name": "Munawer, Qamar",
+      "affiliation": "Brandenburg University of Technology Cottbus-Senftenberg"
+    }
+  ],
+  "access_right": "open",
+  "license": "Apache-2.0",
+  "keywords": [
+    "birch-swinnerton-dyer",
+    "elliptic-curves",
+    "lean4",
+    "formal-verification",
+    "cassels-tate-pairing",
+    "pfaffian",
+    "hodge-conjecture",
+    "abel-jacobi-map",
+    "selmer-group"
+  ],
+  "upload_type": "software"
+}

@@ -1,0 +1,23 @@
+name = "BirchSwinnertonDyer"
+version = "1.0.0"
+description = "Lean 4 formalization of the Cassels-Tate skew Pfaffian square identity, Selmer descent Schur tare, Kato-Kolyvagin Euler cutoff, and the Hodge-Abel-Jacobi 4D-to-1D dimensional elevator"
+keywords = ["math", "number-theory", "elliptic-curves", "birch-swinnerton-dyer", "hodge-conjecture", "lean4"]
+homepage = "https://github.com/Qamarbajwa/birch-swinnerton-dyer-lean4"
+repository = "https://github.com/Qamarbajwa/birch-swinnerton-dyer-lean4"
+license = "Apache-2.0"
+defaultTargets = ["BirchSwinnertonDyer"]
+
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.35.0"
+
+[[lean_lib]]
+name = "BirchSwinnertonDyer"
+srcDir = "formal"

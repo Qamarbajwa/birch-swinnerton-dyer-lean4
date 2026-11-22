@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software or formalization, please cite it as below."
+authors:
+  - family-names: "Munawer"
+    given-names: "Qamar"
+    affiliation: "Brandenburg University of Technology Cottbus-Senftenberg"
+title: "Contemporary Birch and Swinnerton-Dyer Formalization in Lean 4: Cassels-Tate Skew Pfaffian Squares, Selmer Descent Schur Taring, and the 4D-to-1D Hodge-Abel-Jacobi Elevator"
+version: 1.0.0
+date-released: 2026-11-22
+url: "https://github.com/Qamarbajwa/birch-swinnerton-dyer-lean4"
+license: "Apache-2.0"

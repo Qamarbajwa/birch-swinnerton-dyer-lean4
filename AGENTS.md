@@ -1,0 +1,36 @@
+<!-- OBSIDIAN_CENTRAL_BRAIN_START -->
+# Obsidian Central Brain — Global Auto-Boot & Operating Protocol
+
+> **Vault Root:** `D:\Comfy UI\idea memory\obsidian brains\big picture\`  
+> **Scope:** Enforced for all AI agents, subagents, and automated workflows interacting with this project.  
+> **Epistemic Lock:** All 4 Clay Millennium Problems plus Birch and Swinnerton-Dyer remain strictly **OPEN** (`status: verified-finite`).
+
+---
+
+## 1. Operating Protocol & Agent Rules
+- **Rule 1 (800-Token Bootup Protocol):** At session start, read **ONLY** `[[00_AGENT_BOOT_STATE]]` and `[[00_MOC_Big_Picture]]`. Do NOT preload individual workspace knowledge bases into LLM context until explicitly requested for that workspace. For general/conceptual queries, navigate `[[Plain_English_Guide_For_Everyone]]` and the 5 `[[Pattern - ...]]` atomic notes.
+- **Rule 2 (Zero-Token Raw Discussions Protocol):** **NEVER** use `read_file` or LLM context-loading on any file inside `99_Raw_Discussions/` or raw `.jsonl` transcript logs under `C:\Users\arqam\.gemini\antigravity\brain\` (they range from 2 MB to 12+ MB). Read compact ledgers (`<Workspace>/Discussions/Auto_Sorted_Session_Ledger.md`) instead. To sync active or new chats, run `python scripts/sort_and_sync_obsidian_central_brain.py`.
+- **Rule 3 (Strict Epistemic Integrity):** Maintain an uncompromising boundary between verified finite mathematics and open infinite Clay horizons: `status: verified-finite` (finite-dimensional matrix identities, Lean 4 lemmas, finite-grid numerical probes) vs. `open_horizon_lock: STRICTLY OPEN` (all four Clay Millennium Problems and Birch and Swinnerton-Dyer remain strictly OPEN and unsolved). Never claim or imply that any Millennium Problem has been settled.
+
+---
+
+## 2. Live Workspace State Matrix
+
+| Workspace | Knowledge Base | Tag / Commit | Verified Units | Key Finite Metric | Horizon Status |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **01_Hodge_Conjecture** | [[01_Hodge_Knowledge_Base]] | `v1.6.0-rosetta` @ `8078400` | 42 units | `diag(16, 432, 1152) Gram; 2 Z_CM = T...` | **OPEN** |
+| **02_Yang_Mills_4D** | [[02_Yang_Mills_Knowledge_Base]] | `v1.5.0-rosetta` @ `b1b849b` | 91 units | `U(1) cavity tare 65.4505 -> 0.0; F_p...` | **OPEN** |
+| **03_Riemann_Hypothesis** | [[03_Riemann_Knowledge_Base]] | `v3.4.0-rosetta` @ `9ec66c5` | 72 units | `diag(G_22..G_44) 1.22e-55; 94.70% L2...` | **OPEN** |
+| **04_Navier_Stokes_3D** | [[04_Navier_Stokes_Knowledge_Base]] | `v2.1.0-contemporary-compute` @ `056f646` | 22 units | `N=512..8192 scaling; 50% half / 75% ...` | **OPEN** |
+| **05_Birch_Swinnerton_Dyer** | [[05_Birch_Swinnerton_Dyer_Knowledge_Base]] | `v1.0.0-contemporary-bsd` | 5 units | `det(M) == Pf^2; dim Sel = r + dim Sha` | **OPEN** |
+
+---
+
+## 3. The 5 Atomic Mathematical Patterns
+- [[Pattern - Orthogonal Diagonal Triple Gram]] — *Overlap $G = \Omega^T \Omega$ with zero cross-talk across all folders.*
+- [[Pattern - Schur Complement Baseline Taring]] — *The kitchen-scale TARE button $S = D - B^T A^{-1} B$ subtracting bulk.*
+- [[Pattern - Chiral Half-Domain Reconstruction]] — *Recovering sign from parity blindness: $K_{\mathrm{half}} + K_{\mathrm{half}}^T = 4 T_{\mathrm{ch}}$.*
+- [[Pattern - 1D Line vs 2D Plane Cocycle Twist]] — *Why 1D pipes cannot knot while 2D/3D planes twist ($\delta \in [0, 1]$).*
+- [[Pattern - Wavefunction SVD & Active-Tail Equipartition]] — *State $\Omega = |b\rangle\mathbf{1}^T + \Psi$, $>90\%$ active core vs. dissipative tail.*
+
+<!-- OBSIDIAN_CENTRAL_BRAIN_END -->

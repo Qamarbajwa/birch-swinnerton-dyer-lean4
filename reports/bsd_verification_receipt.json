@@ -1,0 +1,44 @@
+{
+  "project": "birch-swinnerton-dyer-lean4",
+  "author": "Qamar Munawer",
+  "affiliation": "Brandenburg University of Technology Cottbus-Senftenberg",
+  "methodology": "ai is being used as a tool",
+  "status": "verified-finite",
+  "open_horizon_lock": "STRICTLY OPEN",
+  "lean4_modules": [
+    "formal/BSDContinuumCasselsTatePfaffianFinitenessCert.lean",
+    "formal/BSDHodgeAbelJacobiCycleElevatorCert.lean"
+  ],
+  "test_results": {
+    "test_1_selmer_tare": {
+      "status": "PASS",
+      "corpus_count": 7,
+      "errors": 0
+    },
+    "test_2_pfaffian_square": {
+      "status": "PASS",
+      "samples_tested": 1000,
+      "failures": 0
+    },
+    "test_3_height_regulator": {
+      "status": "PASS",
+      "regulators_verified": 3
+    },
+    "test_4_heegner_bifurcation": {
+      "status": "PASS",
+      "cases_checked": 4
+    },
+    "test_5_euler_cutoff": {
+      "status": "PASS",
+      "capacity": 100,
+      "cutoff_threshold": 10,
+      "annihilated_primes": [
+        11,
+        13,
+        17,
+        19,
+        23
+      ]
+    }
+  }
+}
