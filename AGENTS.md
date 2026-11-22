@@ -18,11 +18,11 @@
 
 | Workspace | Knowledge Base | Tag / Commit | Verified Units | Key Finite Metric | Horizon Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **01_Hodge_Conjecture** | [[01_Hodge_Knowledge_Base]] | `v1.6.0-rosetta` @ `8078400` | 42 units | `diag(16, 432, 1152) Gram; 2 Z_CM = T...` | **OPEN** |
-| **02_Yang_Mills_4D** | [[02_Yang_Mills_Knowledge_Base]] | `v1.5.0-rosetta` @ `b1b849b` | 91 units | `U(1) cavity tare 65.4505 -> 0.0; F_p...` | **OPEN** |
-| **03_Riemann_Hypothesis** | [[03_Riemann_Knowledge_Base]] | `v3.4.0-rosetta` @ `9ec66c5` | 72 units | `diag(G_22..G_44) 1.22e-55; 94.70% L2...` | **OPEN** |
-| **04_Navier_Stokes_3D** | [[04_Navier_Stokes_Knowledge_Base]] | `v2.1.0-contemporary-compute` @ `056f646` | 22 units | `N=512..8192 scaling; 50% half / 75% ...` | **OPEN** |
-| **05_Birch_Swinnerton_Dyer** | [[05_Birch_Swinnerton_Dyer_Knowledge_Base]] | `v1.0.0-contemporary-bsd` @ `94263aa` | 2 units | `det(M) == Pf^2; dim Sel_p = r + dim ...` | **OPEN** |
+| **01_Hodge_Conjecture** | [[01_Hodge_Knowledge_Base]] | `v1.6.0-contemporary-tare` @ `691db11` | 42 units | `diag(16, 432, 1152) Gram; 2 Z_CM = T...` | **OPEN** |
+| **02_Yang_Mills_4D** | [[02_Yang_Mills_Knowledge_Base]] | `v1.5.0-contemporary-tare` @ `f14390a` | 91 units | `U(1) cavity tare 65.4505 -> 0.0; F_p...` | **OPEN** |
+| **03_Riemann_Hypothesis** | [[03_Riemann_Knowledge_Base]] | `v3.4.0-contemporary-tare` @ `36be1f7` | 72 units | `diag(G_22..G_44) 1.22e-55; 94.70% L2...` | **OPEN** |
+| **04_Navier_Stokes_3D** | [[04_Navier_Stokes_Knowledge_Base]] | `v2.1.0-contemporary-compute` @ `252fdec` | 22 units | `N=512..8192 scaling; 50% half / 75% ...` | **OPEN** |
+| **05_Birch_Swinnerton_Dyer** | [[05_Birch_Swinnerton_Dyer_Knowledge_Base]] | `v1.0.0-contemporary-bsd` @ `57b7dbd` | 2 units | `det(M) == Pf^2; dim Sel_p = r + dim ...` | **OPEN** |
 
 ---
 
@@ -36,9 +36,12 @@
 ---
 
 ## 4. Permanent Zenodo DOIs & Companion Bundles
+- **Master Multi-Project & Compute:** `10.5281/zenodo.24433657` (`v2.1.1-contemporary-compute`, HTTP 200 OK)
+- **BSD Formalization:** `10.5281/zenodo.24431632` (`v1.0.0-contemporary-bsd`, HTTP 200 OK)
 - **Hodge:** `10.5281/zenodo.24381741` (`v1.5.0-rosetta`, Concept `24329779`)
 - **Yang–Mills:** `10.5281/zenodo.24393101` (`v1.3.0-rosetta`, Concept `24327876`)
 - **Riemann:** `10.5281/zenodo.24398285`, `24398293` (`v3.3.0-rosetta`)
 - **Navier–Stokes:** `10.5281/zenodo.24381824` (`v1.2.0-rosetta`, Concept `24378624`)
 - **Master Audit Pack:** `d:/Comfy UI/ROSETTA_4WORKSPACE_FRIEND_AUDIT_PACK.zip` (`4/4 PASS`)
+- **Professor Pack:** `d:/Comfy UI/READY_TO_MAIL_PROFESSOR_PACK/` (`10/10 PDFs + En/De Letters + Verified Receipt`)
 <!-- OBSIDIAN_CENTRAL_BRAIN_END -->
