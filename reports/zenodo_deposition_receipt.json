@@ -1,0 +1,10 @@
+{
+  "deposition_id": 24431632,
+  "deposition_url": "https://zenodo.org/deposit/24431632",
+  "bucket_url": "https://zenodo.org/api/files/eb4c4c52-22db-4a81-98a5-18f70010c2c7",
+  "status": "draft_created_and_files_uploaded",
+  "bundle": "BIRCH_SWINNERTON_DYER_LEAN4_ZENODO_BUNDLE_v1.0.0.zip",
+  "manifest": "SHA256SUMS.txt",
+  "bundle_upload_status": 201,
+  "manifest_upload_status": 201
+}
